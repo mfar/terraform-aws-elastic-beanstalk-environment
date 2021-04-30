@@ -41,6 +41,7 @@ output "application" {
 output "setting" {
   description = "Settings specifically set for this environment"
   value       = aws_elastic_beanstalk_environment.default.setting
+  sensitive   = true
 }
 
 output "all_settings" {
